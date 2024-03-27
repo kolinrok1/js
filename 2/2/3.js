@@ -14,14 +14,14 @@
 число 32.
 */
 
-const pdayNumber = parseInt (prompt ("Введите число от 1 до 32"));
+const pdayNumber = parseInt(prompt("Введите число от 1 до 32"));
 (pdayNumber >= 1 && pdayNumber < 32) ? day(pdayNumber) : alert("Не верно введено значение");
 function day (pdayNumber){
 if (pdayNumber >= 1 && pdayNumber <=10){
-    alert (`"Число ${pdayNumber} в перовой декаде"`);
+    alert(`"Число ${pdayNumber} в перовой декаде"`);
 } else if (pdayNumber > 10 && pdayNumber <= 20) {
-    alert (`"Число ${pdayNumber} во второй декаде"`);
+    alert(`"Число ${pdayNumber} во второй декаде"`);
 } else {
-    alert (`"Число ${pdayNumber} в третей декаде"`);
+    alert(`"Число ${pdayNumber} в третей декаде"`);
 }
 }

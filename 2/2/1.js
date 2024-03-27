@@ -13,6 +13,6 @@
 в консоль "Одно или более значений некорректно.".
 */
 
-const positive= parseInt (prompt ("Введите положительное число"));
-const negative = parseInt (prompt ("Введите отрицательное число"));
-(positive > 0 && negative < 0 ) ? alert('Все значения верны') : alert ("Одно или более значений некорректно.")
+const positive= parseInt(prompt("Введите положительное число"));
+const negative = parseInt(prompt("Введите отрицательное число"));
+(positive > 0 && negative < 0 ) ? alert('Все значения верны') : alert("Одно или более значений некорректно.")
