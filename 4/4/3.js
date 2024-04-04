@@ -15,3 +15,23 @@
 */
 
 // Здесь пишем решение, данный комментарий необходимо стереть.
+let min = Infinity;
+let sum = 0;
+let arrNew =[]
+const arr1 = [];
+    for (let index = 0; index < 5; index++) {
+        let rand = Math.round(Math.random() * 10);
+        arr1.push(rand);
+        sum = sum + rand;
+        if (min > rand) {
+            min = rand;
+        }
+        if (rand === 3){
+            arrNew.push(index);
+        }
+    }
+console.log(arr1);
+console.log(min);
+console.log(sum);
+console.log(arrNew);
+

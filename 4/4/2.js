@@ -8,4 +8,8 @@
 */
 
 // Здесь пишем решение, данный комментарий необходимо стереть.
-const arr = [1, 2, 3, 4, 5, 6, 7];
+let arr = [1, 2, 3, 4, 5, 6, 7];
+const arrNew =arr.slice(0, 2);
+arrNew.push(100);
+arr = arrNew.concat(arr.slice(5,7));
+console.log(arr);

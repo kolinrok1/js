@@ -13,3 +13,11 @@ xxxxx
 */
 
 // Здесь пишем решение, данный комментарий необходимо стереть.
+
+for (let index = 1; index <= 20; index++) {
+    let str = '';
+    for (let j = 0; j < index; j++) {
+        str = str + "*";
+    }
+    console.log(str);
+}
