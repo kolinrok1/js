@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .border-red{
+            border: 1px solid red;
+        }
+        .border-green{
+            border: 1px solid green;
+        }
+    </style>
+</head>
+<body>
+   <!-- <div class="form">
+    <input type="checkbox" class="check"><span> согласиться</span>
+    <button class="btn">кнопку</button>
+    </div> -->
+<!-- <div class="form">
+    <input type="radio" name = 'radio' class="tea"> <span>чай</span>
+    <input type="radio" name = 'radio' class="cofe"> <span>кофе</span>
+    <button class="btn">кнопку</button>
+</div> -->
+<div class="form">
+    <input type="password" class="pas"> <span>password</span>
+    <button class="btn">Войти</button>
+</div>
+    <script>
+//         В html создать элемент checkbox и текст рядом с ним “Согласен с условиями”
+// Добавить кнопку отправить
+// При клике на кнопку отправить нужно проверять выбран ли активным элемент checkbox
+// Если элемент не выбран, добавить текст под чекбоксом “Необходимо согласиться с условиями”
+        // const formEl = document.querySelector('.form');
+        // const chekEl = formEl.querySelector('.check');
+        // const btnEl = formEl.querySelector('.btn');
+        // console.log(btnEl);
+        // btnEl.addEventListener('click', function (e) {
+        //     if (!chekEl.checked) {
+        //         const spanEl = document.createElement('span');
+        //         spanEl.innerHTML = 'забыли согласиться';
+        //         formEl.appendChild(spanEl);
+        //     }
+        // });
+//         В html создать 2 элемента радио кнопки (input type=”radio”) и текст “Чай”, “Кофе” соответственно
+// Кнопка отправить
+// Если выбран чай, необходимо вывести сообщение “Чай закончился”
+// Если выбран кофе, необходимо вывести соообщение “кофе закончился”
+    // const formEl = document.querySelector('.form');
+    // const btnEl = formEl.querySelector('.btn');
+    // const teaEl = formEl.querySelector('.tea');
+    // const cofeEl = formEl.querySelector('.cofe');
+    // btnEl.addEventListener('click', function (e) {
+    //         if (teaEl.checked) {
+    //             console.log('Чай закончился');
+    //         } else if (cofeEl.checked){
+    //             console.log('кофе закончился');
+    //         } else {'Все в наличии'}
+    //     });
+
+//     Создать поле ввода (пароль)
+// Кнопка отправить
+// Если пользователь вводит текст “пароль” то поле ввода должно быть подсвечено зеленым цветом
+// Если пароль неверный, у поля ввода появляется красная обводка и текст “пароль неверный”
+ const pas = '123';
+ const formEl = document.querySelector('.form')
+ const pasEl = document.querySelector('.pas');
+ const btnEl = formEl.querySelector('.btn');
+ btnEl.addEventListener('click', function (e) {
+    if (pasEl.value == pas) {
+        pasEl.classList.remove('border-red');
+        pasEl.classList.add('border-green');
+    } else {
+        pasEl.classList.remove('border-green');
+        pasEl.classList.add('border-red')
+    }
+ });
+    </script>
+</body>
+</html>
