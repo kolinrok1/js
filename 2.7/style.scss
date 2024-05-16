@@ -5,21 +5,28 @@
 }
 
 .play {
-  //   background-image: url(img/play.png);
-  background: url(img/play.svg);
-  width: 100px;
-  height: 100px;
+}
+.play_img {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
 }
 .pause {
-  background-image: url(img/Pause.png);
-  width: 100px;
-  height: 100px;
 }
-// .conteiner {
-//   width: 400px;
-//   height: 400px;
-// }
-.video {
+.pause_img {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  margin-left: 10px;
+}
+.conteiner {
   width: 400px;
   height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.video {
+  width: 400px;
+  height: 246px;
 }

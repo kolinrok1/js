@@ -1,13 +1,23 @@
 const videoEl = document.createElement('video');
 videoEl.setAttribute('src', "video/sample-5s.mp4");
 videoEl.classList.add('video');
+
 const playEll = document.createElement('div');
 playEll.classList.add('play');
-playEll.innerHTML="play";
+// playEll.innerHTML="play";
+const playImgEl = document.createElement('img');
+playImgEl.classList.add('play_img');
+playImgEl.src = 'img/play.png';
+
 
 const pauseEll = document.createElement('div');
 pauseEll.classList.add('pause');
-pauseEll.innerHTML="pause";
+// pauseEll.innerHTML="pause";
+const pauseImgEl = document.createElement('img');
+pauseImgEl.classList.add('pause_img');
+pauseImgEl.src = 'img/Pause.png';
+
+
 
 const divEl = document.querySelector('.conteiner');
 divEl.appendChild(videoEl);
@@ -44,7 +54,10 @@ videoEl.addEventListener('loadeddata', function (e) {
 valueEL.addEventListener('change', function (e) {
     videoEl.volume = e.target.value / 100;
 });
+
+divEl.appendChild(pauseEll);
+pauseEll.appendChild(pauseImgEl);
+divEl.appendChild(playEll);
+playEll.appendChild(playImgEl);
 divEl.appendChild(valueEL);
 divEl.appendChild(rangeEL);
-divEl.appendChild(pauseEll);
-divEl.appendChild(playEll);
