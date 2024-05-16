@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.play {
+  background: url(img/play.svg);
+  width: 100px;
+  height: 100px;
+}
+
+.pause {
+  background-image: url(img/Pause.png);
+  width: 100px;
+  height: 100px;
+}
+
+.video {
+  width: 400px;
+  height: 400px;
+}/*# sourceMappingURL=style.css.map */
