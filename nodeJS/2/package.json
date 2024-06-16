@@ -1,0 +1,14 @@
+{
+  "name": "kolinrok_pas_gen",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm index.js"
+  },
+  "author": "kolinrok",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
