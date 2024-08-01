@@ -1,5 +1,6 @@
-// 1. При изменении значения в input с id="from", значение содержащееся в нем должно моментально отображаться в span. То есть при печати в input'е тег span также должен меняться.
-const formEl = document.querySelector('#from');
+// 1. При изменении значения в input с id="from", значение содержащееся в нем должно моментально отображаться в span.
+//То есть при печати в input'е тег span также должен меняться.
+const formE l = document.querySelector('#from');
 console.log(formEl);
 const spanEl = document.querySelector('span');
 formEl.addEventListener('input', function (e) {
