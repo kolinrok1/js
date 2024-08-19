@@ -51,7 +51,7 @@ const initialData = [
     const textareaEl = document.querySelector(".input");
     const buttonEl = document.querySelector(".button");
     const errorEl = document.querySelector(".error");
-
+    console.log(textareaEl);
     textareaEl.addEventListener('input', function (e) {
         if ((textareaEl.value).length < 50) {
             errorEl.innerHTML = "отзыв должен содержать минимум 50 символов"
